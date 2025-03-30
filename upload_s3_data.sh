@@ -37,7 +37,7 @@ fi
 
 ## Data paths
 ### Staging buckets
-BASEPATH="s3://staging-cellpainting-gallery/cpg0020-varchamp/broad/workspace"
+# BASEPATH="s3://staging-cellpainting-gallery/cpg0020-varchamp/broad/workspace"
 # HOMEPATH="/home/shenrunx/igvf/varchamp"
 
 # ## Download data from S3
@@ -48,12 +48,12 @@ BASEPATH="s3://staging-cellpainting-gallery/cpg0020-varchamp/broad/workspace"
 # aws s3 sync --no-sign-request "$BASEPATH/metadata/$batch_id" ../input/meta_correct_batch78/$batch_id
 
 ## Upload data to S3
-batches="2024_01_23_Batch_7 2024_02_06_Batch_8"
-for batch_id in $batches;
-do
-    UPLOADPATH="$BASEPATH/metadata/platemaps/$batch_id/platemap/"
-    aws s3 cp ../../output/meta_correct_batch78/$batch_id/ "$UPLOADPATH" --recursive --exclude "*" --include "*.txt"
-done
+# batches="2024_01_23_Batch_7 2024_02_06_Batch_8"
+# for batch_id in $batches;
+# do
+#     UPLOADPATH="$BASEPATH/metadata/platemaps/$batch_id/platemap/"
+#     aws s3 cp ../../output/meta_correct_batch78/$batch_id/ "$UPLOADPATH" --recursive --exclude "*" --include "*.txt"
+# done
 
 
 ## Example to update Cell Painting gallery directly (CAREFUL!!!)

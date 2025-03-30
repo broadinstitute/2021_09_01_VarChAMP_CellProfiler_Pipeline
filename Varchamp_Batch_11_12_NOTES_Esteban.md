@@ -208,7 +208,7 @@ a similar manner.
 }
 ============================================================================================
 
-## Transfer load_data.csv’s to CPG --> NOT NECESSARY!
+## Transfer load_data.csv’s to CPG --> NOT NECESSARY? OR NECESSARY
 
 ### Download files to local computer
 aws s3 sync s3://imaging-platform-ssf/cpg0020-varchamp/broad/workspace/load_data_csv/2024_12_09_Batch_11/ /Users/emigliet/Documents/GitHub/emiglietta_projects/2024_Varchamp/Batch_EM2/2024_12_09_Batch_11/
