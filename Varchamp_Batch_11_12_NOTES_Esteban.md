@@ -29,6 +29,7 @@ BUCKET=staging-cellpainting-gallery
 PROJECT_NAME=cpg0020-varchamp
 BATCH_ID=2024_12_09_Batch_11
 
+
 ```
 
 ## Check the files the collaborator shared
@@ -68,10 +69,6 @@ ls /imaging/dropbox/VarChAMP/
 aws s3 cp --recursive /imaging/dropbox/VarChAMP/2024_12_09_Batch_11/ s3://staging-cellpainting-gallery/cpg0020-varchamp/broad/images/2024_12_09_Batch_11/ --acl bucket-owner-full-control
 
 aws s3 cp --recursive /imaging/dropbox/VarChAMP/2024_12_09_Batch_12/ s3://staging-cellpainting-gallery/cpg0020-varchamp/broad/images/2024_12_09_Batch_12/ --acl bucket-owner-full-control
-
-
-
-
 
 aws s3 mv s3://staging-cellpainting-gallery/cpg0020-varchamp/broad/images/2024_12_09_Batch_10/ s3://staging-cellpainting-gallery/cpg0020-varchamp/broad/images/2024_12_09_Batch_11/ --recursive --exclude "*" --include "2024-12-09 B11A1R1*"
 
